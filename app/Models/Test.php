@@ -12,7 +12,7 @@ class Test extends Model
   {
     parent::__construct($attributes);
 
-    $this->string = 'âéèçàêôîû$$* dfqdf sdfqs';
+    $this->string = 'âéèçàêôîû$$* dfqdf sdfqségâégâ';
   }
 
   public function getTitleAttribute()
