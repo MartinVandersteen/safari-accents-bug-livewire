@@ -1,12 +1,7 @@
 <div> 
   <div>
     <h1>{{ $string }}</h1>
-    <div>{{ $text }}</div>
-    <div>
-      <section>
-        {{ $text }}
-      </section>
-    </div>
+    <img alt="{{ $text  }}" />
   </div>
   <div>{{ $number }}</div>
   <button wire:click="addNumber">Add number</button>
