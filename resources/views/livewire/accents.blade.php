@@ -1,6 +1,6 @@
 <div> 
   <div>
-    <div>{{ $string }}</div>
+    <h1>{{ $string }}</h1>
     <div>{{ $text }}</div>
     <div>
       <section>
