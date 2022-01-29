@@ -16,7 +16,7 @@ class Test extends Model
   {
     parent::__construct($attributes);
 
-    $this->string = 'Les dégâts locatifs';
+    $this->string = 'â';
   }
 
   public function getTitleAttribute()

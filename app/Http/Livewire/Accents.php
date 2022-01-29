@@ -15,9 +15,9 @@ class Accents extends Component
 
   public function mount()
   {
-    $this->object = new Test();
-    $this->string = $this->object->title;
-    $this->text = $this->object->title . ' ' . $this->object->title;
+    // $this->object = new Test();
+    $this->string = 'â';
+    // $this->text = 'â';
     $this->number = 1;
   }
 
