@@ -2,17 +2,19 @@
 
 namespace App\Http\Livewire;
 
+use App\Models\Test;
 use Livewire\Component;
 
 class Accents extends Component
 {
   private $object;
+
   public $string;
   public $number;
 
   public function mount()
   {
-    $this->object = (object)['title' => 'This crashes it all : dégâts'];
+    $this->object = new Test();
     $this->string = $this->object->title;
     $this->number = 1;
   }
