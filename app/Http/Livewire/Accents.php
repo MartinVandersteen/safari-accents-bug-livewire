@@ -6,12 +6,14 @@ use Livewire\Component;
 
 class Accents extends Component
 {
+  private $object;
   public $string;
   public $number;
 
   public function mount()
   {
-    $this->string = "This crashes it all : dégâts";
+    $this->object = (object)['title' => 'This crashes it all : dégâts'];
+    $this->string = $this->object->title;
     $this->number = 1;
   }
 
