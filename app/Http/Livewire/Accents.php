@@ -10,12 +10,14 @@ class Accents extends Component
   private $object;
 
   public $string;
+  public $text;
   public $number;
 
   public function mount()
   {
     $this->object = new Test();
     $this->string = $this->object->title;
+    $this->text = $this->object->title . ' ' . $this->object->title;
     $this->number = 1;
   }
 
