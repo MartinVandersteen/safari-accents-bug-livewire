@@ -7,12 +7,12 @@ use Livewire\Component;
 class Accents extends Component
 {
   public $string;
-  public $whatever;
+  public $number;
 
   public function mount()
   {
     $this->string = "This crashes it all : dégâts";
-    $this->whatever = [];
+    $this->number = 1;
   }
 
   public function render()
@@ -20,8 +20,8 @@ class Accents extends Component
     return view('livewire.accents');
   }
 
-  public function addWhatever()
+  public function addNumber()
   {
-    $this->whatever[] = $this->string;
+    $this->number++;
   }
 }

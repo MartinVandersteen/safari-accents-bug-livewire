@@ -1,6 +1,5 @@
-<div>
-  @foreach ($whatever as $string)  
-    <div>{{ $string }}</div>
-  @endforeach
-  <button wire:click="addWhatever">Do something</button>
+<div> 
+  <div>{{ $string }}</div>
+  <div>{{ $number }}</div>
+  <button wire:click="addNumber">Add number</button>
 </div>
