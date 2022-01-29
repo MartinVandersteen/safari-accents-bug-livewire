@@ -6,17 +6,13 @@ use Livewire\Component;
 
 class Accents extends Component
 {
-  public $array;
+  public $string;
   public $whatever;
 
   public function mount()
   {
-    $this->array = [
-      "This crashes it all : ê",
-      "This crashes it all : â",
-      "This crashes it all : é",
-    ];
-    $this->whatever = true;
+    $this->string = "This crashes it all : dégâts";
+    $this->whatever = [];
   }
 
   public function render()
@@ -24,8 +20,8 @@ class Accents extends Component
     return view('livewire.accents');
   }
 
-  public function toggleWhatever()
+  public function addWhatever()
   {
-    $this->whatever = !$this->whatever;
+    $this->whatever[] = $this->string;
   }
 }

@@ -1,6 +1,6 @@
 <div>
-  @foreach ($array as $string)  
-    <span>{{ $string }}</span>
+  @foreach ($whatever as $string)  
+    <div>{{ $string }}</div>
   @endforeach
-  <button wire:click="toggleWhatever">{{ $whatever ? 'true' : 'false' }}</button>
+  <button wire:click="addWhatever">Do something</button>
 </div>
